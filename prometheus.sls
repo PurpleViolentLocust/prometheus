@@ -13,8 +13,6 @@ prometheus_package:
     - name: /opt/
     - source: https://github.com/prometheus/prometheus/releases/download/v2.48.1/prometheus-2.48.1.linux-amd64.tar.gz
     - source_hash: 5d58b52ccfeff25700bc8d14ecc1235cbf112a05041e3b2f6900d16b44856f6f
-    - archive_format: tar
-    - tar_options: --strip-components=1
     - user: prometheus
     - group: prometheus
     - if_missing: /opt/prometheus/prometheus
