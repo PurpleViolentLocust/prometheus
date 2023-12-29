@@ -20,7 +20,7 @@ prometheus_package:
 prometheus_config:
   file.managed:
     - name: /etc/prometheus/prometheus.yml
-    - source: salt://prometheus/prometheus.yml
+    - source: salt://prometheus/files/prometheus.yml
     - user: prometheus
     - group: prometheus
     - mode: 644
